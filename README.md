@@ -3,4 +3,5 @@ This repository contains notes and resources I compiled during my research and p
 <br>
 <br>
 # Table Of Content:
+### Input Validation Testing:
 - ### [SQL Injection](https://github.com/aadix420/Web-App-Testing/blob/main/SQL%20Injection.md)
